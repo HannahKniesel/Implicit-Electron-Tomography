@@ -387,7 +387,7 @@ class Trainer_Explicit(Trainer):
                 else: 
                     last_saved_model += 1
 
-            if((last_saved_model>5) and (iteration > 100000)):
+            if((last_saved_model>10) and (iteration > 100000)):
                 print("Early stopping. Stop based on convergence.")
                 break
             
