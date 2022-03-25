@@ -51,21 +51,27 @@ For closer details on synthetic data generation see the README.md in the ./Synth
 ---
 ## Data for Download
 ---
-You can find all micrographs, pretrained-models and reconstructions as presented in the paper here: URL
+You can find all training data and micrographs as presented in the paper here: https://viscom.datasets.uni-ulm.de/Implicit-Electron-Tomography/dataset.zip
 
-All the data for download has a size of approximately 40GB.
+The directory structure is as follows: 
 
+```
+_Data                           ...contains micrographs and training data
+│   Real_CovidInfectedCell
+│   Real_Nanoparticles
+│   Synthetic
+
+```
+
+
+You can find all pretrained-models and reconstructions as presented in the paper here: https://viscom.datasets.uni-ulm.de/Implicit-Electron-Tomography/models_and_results.zip 
 
 The directory structure is as follows: 
 ```
-Data  
+ModelsAndResults  
 │
 └───Reconstruction_Data
 │   │
-│   └───_Data                           ...contains micrographs and training data
-│   │   │   Real_CovidInfectedCell
-│   │   │   Real_Nanoparticles
-│   │   │   Synthetic
 │   └───_PretrainedModels               ...contains pretrained models 
 │   │   │   NoiseModel
 │   │   │   Real_CovidInfectedCell
@@ -80,5 +86,9 @@ Data
     │   VirusPDB                        ...contains virus density map (PDB 6mid)
 ```
 
-Please unpack all data of the "Reconstruction_Data" to the "Reconstruction" directory. 
+
+All the data for download has a size of approximately 45GB.
+
+
+Please unpack all data of the "Reconstruction_Data" and "_Data" to the "Reconstruction" directory. 
 And please unpack all data of the "SyntheticDataGen_Data" to the "SyntheticDataGeneration" directory.
