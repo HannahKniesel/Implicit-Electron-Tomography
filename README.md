@@ -2,7 +2,7 @@
 
 This is the official git repository of 
 
-> ## ***"Clean Implicit 3D Structure from Noisy 2D STEM Images"***  
+> ## ***"Clean Implicit 3D Structure from Noisy 2D STEM Images", CVPR 2022***  
 
 *Abstract: STEM acquire 2D images of a 3D sample on the scale of individual cell components.
 Unfortunately, these 2D images can be too noisy to be fused into a useful 3D structure and facilitating good denoisers is challenging due to the lack of clean-noisy pairs.
@@ -62,6 +62,7 @@ _Data                           ...contains micrographs and training data
 │   Synthetic
 
 ```
+All this data has a size of approximately 5GB.
 
 
 You can find all pretrained-models and reconstructions as presented in the paper here: https://viscom.datasets.uni-ulm.de/Implicit-Electron-Tomography/models_and_results.zip 
@@ -87,7 +88,7 @@ ModelsAndResults
 ```
 
 
-All the data for download has a size of approximately 45GB.
+All this data has a size of approximately 15GB.
 
 
 Please unpack all data of the "Reconstruction_Data" and "_Data" to the "Reconstruction" directory. 
