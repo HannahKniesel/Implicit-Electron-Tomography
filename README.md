@@ -53,6 +53,8 @@ For closer details on synthetic data generation see the README.md in the ./Synth
 ---
 You can find all training data and micrographs as presented in the paper here: https://viscom.datasets.uni-ulm.de/Implicit-Electron-Tomography/dataset.zip
 
+Or here: https://cove.thecvf.com/datasets/760
+
 The directory structure is as follows: 
 
 ```
