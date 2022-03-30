@@ -4,6 +4,8 @@ This is the official git repository of
 
 > ## ***"Clean Implicit 3D Structure from Noisy 2D STEM Images", CVPR 2022***  
 
+https://arxiv.org/abs/2203.15434
+
 *Abstract: STEM acquire 2D images of a 3D sample on the scale of individual cell components.
 Unfortunately, these 2D images can be too noisy to be fused into a useful 3D structure and facilitating good denoisers is challenging due to the lack of clean-noisy pairs.
 Additionally, representing detailed 3D structure can be difficult even for clean data when using regular 3D grids.
