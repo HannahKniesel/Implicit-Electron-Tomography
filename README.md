@@ -22,7 +22,12 @@ This repository contains all code regarding the synthetic data generation proces
 ---
 If you find this code useful, please consider citing us: 
 
-    BibTex-Citation
+     @inproceedings{kniesel2022stem,
+       title={Clean Implicit 3D Structure from Noisy 2D STEM Images},
+       author={Hannah Kniesel and Timo Ropinski and Tim Bergner and Kavitha Shaga Devan and Clarissa Read and Paul Walther and Tobias Ritschel and Pedro Hermosilla},
+       booktitle={Proc. Computer Vision and Pattern Recognition (CVPR), IEEE},
+       year={2022}
+     }
 
 ---
 ## Getting Started 
