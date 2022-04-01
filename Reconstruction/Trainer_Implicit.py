@@ -323,7 +323,7 @@ class Trainer_Implicit(Trainer):
                             }, step = iteration)
 
                 #Validate volume slice
-                if(self.gt_vol):
+                if(self.gt_vol is not None):
                     recon = self.predict_slice()
                     psnr_val, mse_val, dssim_val = self.validate_volumeslice(self.gt_vol, recon)
                     wandb.log({"Reconstruction Slice": wandb.Image(min_max(recon)),
