@@ -26,10 +26,10 @@ If you find this code useful, please consider citing us:
 
      @inproceedings{kniesel2022stem,
        title={Clean Implicit 3D Structure from Noisy 2D STEM Images},
-       author={Hannah Kniesel and Timo Ropinski and Tim Bergner and Kavitha Shaga Devan and Clarissa Read and Paul Walther and Tobias Ritschel and Pedro Hermosilla},
+       author={Kniesel, Hannah and Ropinski, Timo and Bergner, Tim and Devan, Kavitha Shaga and Read, Clarissa and Walther, Paul and Ritschel, Tobias and Hermosilla, Pedro},
        booktitle={Proc. Computer Vision and Pattern Recognition (CVPR), IEEE},
        year={2022}
-     }
+    }
 
 ---
 ## Getting Started 
