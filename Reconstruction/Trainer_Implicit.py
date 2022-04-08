@@ -136,7 +136,7 @@ class Trainer_Implicit(Trainer):
                 
                 loss.backward()
                 
-                iter_loss_small += loss
+                iter_loss_small += loss.item()
             
             if(iteration < self.args.l2_iters):
                 l2_optim_small.step()
@@ -186,7 +186,7 @@ class Trainer_Implicit(Trainer):
                 if(self.noise_model):
                     torch.nn.utils.clip_grad_norm_(self.noise_model.parameters(), 100.)
                 
-                iter_loss_large += loss
+                iter_loss_large += loss.item()
             
             if(iteration < self.args.l2_iters):
                 # Starting iterations
