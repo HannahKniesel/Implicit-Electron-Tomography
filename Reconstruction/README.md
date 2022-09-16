@@ -30,9 +30,13 @@ It further saves a figure showing the projection micrographs and reconstruction 
 
 
 
-### Example Use
+### Example Use Synthetic Data
 
     python DataFromImages.py --micrograph_path ./_Data/Synthetic/Micrographs/Clean/ --save_to ./_Data/Synthetic/TrainingData/Clean/
+
+### Example Use Real Data
+
+    python DataFromImages.py  --micrograph_path ./_Data/Real_CovidInfectedCell/Micrographs/Noisy/ --save_to _Data/Real_CovidInfectedCell/TrainingData/Noisy/ --slice 0.34 --norm_coords 
 
 If you'd like to define your validation files, please provide a directory "val_files" inside the training data directory. Otherwise, validation will be picked randomly from the training files.
 

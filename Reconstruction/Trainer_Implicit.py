@@ -40,8 +40,8 @@ class Trainer_Implicit(Trainer):
 
 
         #optimizer and scheduler
-        self.optimizer, self.scheduler = self.setup_optimizer(model_params, self.args.optim)
-        self.optimizer_approximation, self.scheduler_approximation = self.setup_optimizer(small_model_params, self.args.optim)
+        self.optimizer, self.scheduler = self.setup_optimizer(model_params, self.args.optim, self.args.lr)
+        self.optimizer_approximation, self.scheduler_approximation = self.setup_optimizer(small_model_params, self.args.optim, self.args.lr)
 
 
         #noise model
@@ -64,7 +64,7 @@ class Trainer_Implicit(Trainer):
                     self.noise_model.load_state_dict(self.ckpt['noise_model'])
                     print("Load noise model parameters")
 
-                self.nf_optim, self.scheduler_nf = self.setup_optimizer(self.noise_model.parameters(), self.args.nf_optim)
+                self.nf_optim, self.scheduler_nf = self.setup_optimizer(self.noise_model.parameters(), self.args.nf_optim, self.args.nf_lr)
                 
         else: 
             self.noise_model = None

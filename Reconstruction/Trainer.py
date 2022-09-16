@@ -142,7 +142,7 @@ class Trainer():
             i += img_w
         return defocus
 
-    def setup_optimizer(self, model_params, optim_type):
+    def setup_optimizer(self, model_params, optim_type, lr_init):
         #Optimizer
         if(optim_type=="sgd"):
             optimizer = torch.optim.SGD(model_params, lr=1, momentum=0.9, weight_decay= 1e-3) 
@@ -153,7 +153,6 @@ class Trainer():
         num_steps = int(self.args.iterations) 
         start_decay = self.args.lr_decay_start 
         decay_steps = num_steps - start_decay
-        lr_init = self.args.lr
         lr_end = self.args.lr/self.args.lr_decay_rate
         lr_muls = []
         for i in range(num_steps+1):
